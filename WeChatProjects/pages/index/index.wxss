@@ -1,39 +1,39 @@
 /* pages/index/index.wxss */
 swiper {
     width: 100%;
-    height: 260px;
+    height: 500rpx;
 }
 
 .swiper-item {
     width: 100%;
-    height: 280px;
+    height: 460rpx;
 }
 
 .swp-img {
     width: 100%;
-    height: 200px;
+    height: 400rpx;
     margin: 0;
     padding: 0;
 }
 
 .swp-text {
     width: 100%;
-    height: 30px;
-    margin-top: -5px;
-    line-height: 30px;
+    height: 60rpx;
+    margin-top: -10rpx;
+    line-height: 60rpx;
     color: white;
     background-color: var(--subcolor);
     text-align: center;
 }
 
 .go-order {
-    width: 150px;
-    height: 200px;
-    margin: 48px auto 0;
-    line-height: 50px;
-    border: var(--maincolor) 4px solid;
-    border-radius: 24px;
-    box-shadow: 0 0 18px var(--maincolor);
+    width: 250rpx;
+    height: 350rpx;
+    margin: 60rpx auto 0;
+    line-height: 100rpx;
+    border: var(--maincolor) 4rpx solid;
+    border-radius: 48rpx;
+    box-shadow: 0 0 18rpx var(--maincolor);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,13 +41,13 @@ swiper {
 }
 
 .go-order image {
-    width: 100px;
-    height: 100px;
+    width: 200rpx;
+    height: 200rpx;
     border-radius: 50%;
 }
 
 .go-order view {
-    font-size: 20px;
+    font-size: 48rpx;
     font-weight: bold;
     color: var(--maincolor);
 }
