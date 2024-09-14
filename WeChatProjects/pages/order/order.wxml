@@ -1,2 +1,24 @@
 <!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<view class="submit" bindtap="submitTap">下单</view>
+
+<view class="category" wx:for="{{category}}" wx:for-item="categoryItem" wx:key="*this">
+    <view class="category-title">{{categoryItem.name}}</view>
+    <view class="goods" wx:for="{{categoryItem.goods}}" wx:for-item="goodsItem" wx:key="*this">
+        <view class="goods-part">
+            <image class="goods-pic" src="{{goodsItem.pic}}"></image>
+            <view class="goods-info">
+                <view class="goods-name">{{goodsItem.name}}</view>
+                <view class="goods-price">{{goodsItem.price}} 元 / {{goodsItem.unit}}</view>
+            </view>
+        </view>
+        <view class="goods-part">
+            <view class="goods-count">
+                <view class="count-btn" bindtap="minus" data-index="{{goodsItem.index}}">-</view>
+                <text class="count-number">{{goodsItem.count}}</text>
+                <view class="count-btn" bindtap="add" data-index="{{goodsItem.index}}">+</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="footer">底线, 出现了</view>

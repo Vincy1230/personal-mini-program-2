@@ -5,7 +5,7 @@
         <view class="swp-text">{{item.text}}</view>
     </swiper-item>
 </swiper>
-<navigator class="go-order" url="../order/order" open-type="switchTab">
+<view class="go-order" bindtap="goOrderTap">
     <image src="/images/go_order.jpg" mode="aspectFill"></image>
     <view>点我下单</view>
-</navigator>
+</view>

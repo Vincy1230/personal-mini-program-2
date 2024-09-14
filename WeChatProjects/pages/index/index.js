@@ -24,6 +24,22 @@ var pageObject = {
             },
         ],
     },
+
+    onLoad(query) {
+        this.start_order = wx.createInnerAudioContext({
+            useWebAudioImplement: true,
+        });
+        this.start_order.src = 'audios/start_order.mp3';
+    },
+
+    goOrderTap() {
+        wx.switchTab({
+            url: '/pages/order/order',
+        });
+        this.start_order.play();
+    },
+
     onShareAppMessage() {},
 };
+
 Page(pageObject);
