@@ -1,7 +1,7 @@
-<!--index.wxml-->
-<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<scroll-view class="scrollarea" scroll-y type="list">
-  <view class="container">
-    Weixin
-  </view>
-</scroll-view>
+<!--pages/index/index.wxml-->
+<swiper indicator-dots="true" indicator-active-color="#6F4017" autoplay="true" interval="3000" duration="300" circular="true">
+    <swiper-item wx:for="{{swpList}}" wx:key="*this">
+        <image class="swp-img" src="{{item.img}}" mode="aspectFill"></image>
+        <view class="swp-text">{{item.text}}</view>
+    </swiper-item>
+</swiper>

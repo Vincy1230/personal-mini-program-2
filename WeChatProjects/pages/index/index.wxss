@@ -1,10 +1,29 @@
-/**index.wxss**/
-page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* pages/index/index.wxss */
+.page {
+    margin: 0;
+    padding: 0;
 }
-.scrollarea {
-  flex: 1;
-  overflow-y: hidden;
+
+swiper {
+    width: 100%;
+    height: 260px;
+}
+
+.swiper-item {
+    width: 100%;
+    height: 280px;
+}
+
+.swp-img {
+    width: 100%;
+    height: 200px;
+}
+
+.swp-text {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    background-color: var(--subcolor);
+    text-align: center;
 }
