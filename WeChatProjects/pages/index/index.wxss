@@ -1,9 +1,4 @@
 /* pages/index/index.wxss */
-.page {
-    margin: 0;
-    padding: 0;
-}
-
 swiper {
     width: 100%;
     height: 260px;
@@ -17,13 +12,42 @@ swiper {
 .swp-img {
     width: 100%;
     height: 200px;
+    margin: 0;
+    padding: 0;
 }
 
 .swp-text {
     width: 100%;
     height: 30px;
+    margin-top: -5px;
     line-height: 30px;
     color: white;
     background-color: var(--subcolor);
     text-align: center;
+}
+
+.go-order {
+    width: 150px;
+    height: 200px;
+    margin: 48px auto 0;
+    line-height: 50px;
+    border: var(--maincolor) 4px solid;
+    border-radius: 24px;
+    box-shadow: 0 0 18px var(--maincolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-order image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.go-order view {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--maincolor);
 }

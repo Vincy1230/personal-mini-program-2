@@ -8,6 +8,7 @@
         "navigationBarBackgroundColor": "#6F4017",
         "navigationBarTitleText": "老八食肆",
         "navigationBarTextStyle": "white",
+        "backgroundColor": "#fbfbfb",
         "backgroundTextStyle": "light"
     },
     "tabBar": {
