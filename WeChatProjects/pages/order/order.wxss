@@ -28,7 +28,7 @@
     background-color: var(--subcolor);
 }
 
-.goods {
+.dishes {
     /* 左右两边一个一边靠边分布 */
     display: flex;
     justify-content: space-between;
@@ -36,25 +36,25 @@
     border-bottom: 1rpx solid #ccc;
 }
 
-.goods-part {
+.dishes-part {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.goods-pic {
+.dishes-pic {
     width: 100rpx;
     height: 100rpx;
     margin-right: 20rpx;
 }
 
-.goods-price {
+.dishes-price {
     color: var(--maincolor);
     font-size: small;
     margin-top: 5rpx;
 }
 
-.goods-count {
+.dishes-count {
     display: flex;
     justify-content: space-between;
     align-items: center;
