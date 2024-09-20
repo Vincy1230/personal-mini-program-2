@@ -1,2 +1,13 @@
-<!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<!-- pages/me/me.wxml -->
+<image class="me-img" src="cloud://vincy-4g4riisz211838fd.7669-vincy-4g4riisz211838fd-1258627717/Static/laoba8.jpg" mode="aspectFill"></image>
+<image class="me-img" src="cloud://vincy-4g4riisz211838fd.7669-vincy-4g4riisz211838fd-1258627717/Static/laoba9.jpg" mode="aspectFill"></image>
+
+<view class="container">
+    <text class="h1">「老八食肆」</text>
+    <text class="h2">小程序详情</text>
+    <text>显然，这份作品无法过审。不过编程的意义不就是创造吗？</text>
+    <text>谨以此拙作博君一笑，稍作娱乐。感谢您的观赏。</text>
+    <text class="h2">作者信息</text>
+    <text>Vincy云昔 (史胤隆)</text>
+    <text>北京工商大学 计智学院 学生</text>
+</view>

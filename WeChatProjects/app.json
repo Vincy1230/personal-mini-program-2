@@ -30,7 +30,7 @@
             },
             {
                 "pagePath": "pages/me/me",
-                "text": "我的账号",
+                "text": "关于老八",
                 "iconPath": "images/icon/tabbar/me.png",
                 "selectedIconPath": "images/icon/tabbar/me_selected.png"
             }

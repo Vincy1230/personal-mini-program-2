@@ -1,1 +1,46 @@
 /* pages/me/me.wxss */
+.me-img {
+    margin: -5rpx;
+    padding: 0;
+    width: 110vw;
+    height: 50vh;
+    filter: sepia(100%) contrast(85%) brightness(90%);
+}
+
+.container {
+    position: fixed;
+    color: black;
+    top: 120rpx;
+    left: 60rpx;
+    right: 60rpx;
+    bottom: 120rpx;
+    padding: 60rpx;
+    background: rgba(255, 255, 255, 0.75);
+    border: 3rpx solid rgba(255, 255, 255, 1);
+    box-shadow: 20rpx 10rpx 10rpx rgba(0, 0, 0, 0.5);
+    border-radius: 100rpx;
+    overflow-y: auto;
+}
+
+.container > text {
+    display: block;
+    text-align: center;
+    margin: 24rpx 18rpx;
+    font-family: 'BAIQI';
+}
+
+.container > text.h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 72rpx;
+    margin: 48rpx 0;
+    font-weight: bold;
+}
+
+.container > text.h2 {
+    text-align: center;
+    font-size: 48rpx;
+    font-style: italic;
+    margin: 68rpx 0 42rpx;
+    font-weight: bolder;
+}
