@@ -17,11 +17,6 @@ var pageObject = {
         });
         that.finish_order.src = 'audios/finish_order.mp3';
 
-        that.reduce = wx.createInnerAudioContext({
-            useWebAudioImplement: true,
-        });
-        that.reduce.src = 'audios/reduce.mp3';
-
         let categoryObj = {};
         db.collection('dishes')
             .aggregate()
@@ -97,7 +92,7 @@ var pageObject = {
         let dish = category[index[0]].dishes[index[1]];
         if (dish.count > 0) {
             dish.count--;
-            this.reduce.play();
+            dish.audioContext.play();
             this.setData({
                 category: category,
             });
