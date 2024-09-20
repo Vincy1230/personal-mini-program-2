@@ -36,6 +36,10 @@ var pageObject = {
                 for (let i in res.list) {
                     let category = res.list[i];
                     for (let j in category.dishes) {
+                        category.dishes[j].price =
+                            category.dishes[j].price % 1 === 0
+                                ? category.dishes[j].price
+                                : category.dishes[j].price.toFixed(2);
                         category.dishes[j].count = 0;
                         category.dishes[j].audioContext =
                             wx.createInnerAudioContext({
