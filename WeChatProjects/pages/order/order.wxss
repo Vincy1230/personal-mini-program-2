@@ -84,4 +84,6 @@
     width: 100%;
     text-align: center;
     padding-bottom: 100rpx;
+    font-weight: lighter;
+    color: #ccc;
 }
