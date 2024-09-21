@@ -1,4 +1,4 @@
-// pages/me/me.js
+// pages/about/about.js
 var pageObject = {
     onLoad(query) {
         this.dslb = wx.createInnerAudioContext({

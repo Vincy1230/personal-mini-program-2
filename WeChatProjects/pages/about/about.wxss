@@ -1,5 +1,5 @@
-/* pages/me/me.wxss */
-.me-img {
+/* pages/about/about.wxss */
+.about-img {
     margin: -5rpx;
     padding: 0;
     width: 110vw;

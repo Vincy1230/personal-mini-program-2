@@ -1,6 +1,6 @@
-<!-- pages/me/me.wxml -->
-<image class="me-img" src="cloud://vincy-4g4riisz211838fd.7669-vincy-4g4riisz211838fd-1258627717/Static/laoba8.jpg" mode="aspectFill"></image>
-<image class="me-img" src="cloud://vincy-4g4riisz211838fd.7669-vincy-4g4riisz211838fd-1258627717/Static/laoba9.jpg" mode="aspectFill"></image>
+<!-- pages/about/about.wxml -->
+<image class="about-img" src="cloud://vincy-4g4riisz211838fd.7669-vincy-4g4riisz211838fd-1258627717/Static/laoba8.jpg" mode="aspectFill"></image>
+<image class="about-img" src="cloud://vincy-4g4riisz211838fd.7669-vincy-4g4riisz211838fd-1258627717/Static/laoba9.jpg" mode="aspectFill"></image>
 
 <view class="container">
     <text class="h1">「老八食肆」</text>

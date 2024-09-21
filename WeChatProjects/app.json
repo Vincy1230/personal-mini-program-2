@@ -2,7 +2,7 @@
     "pages": [
         "pages/index/index",
         "pages/order/order",
-        "pages/me/me"
+        "pages/about/about"
     ],
     "window": {
         "navigationBarBackgroundColor": "#6F4017",
@@ -29,10 +29,10 @@
                 "selectedIconPath": "images/icon/tabbar/order_selected.png"
             },
             {
-                "pagePath": "pages/me/me",
+                "pagePath": "pages/about/about",
                 "text": "关于老八",
-                "iconPath": "images/icon/tabbar/me.png",
-                "selectedIconPath": "images/icon/tabbar/me_selected.png"
+                "iconPath": "images/icon/tabbar/about.png",
+                "selectedIconPath": "images/icon/tabbar/about_selected.png"
             }
         ]
     },
