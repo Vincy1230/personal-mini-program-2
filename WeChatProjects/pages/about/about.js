@@ -10,7 +10,9 @@ var pageObject = {
         this.dslb.loop = true;
     },
     onShow() {
-        this.dslb.play();
+        if (this.dslb.paused) {
+            this.dslb.play();
+        }
     },
     onHide() {
         this.dslb.pause();
