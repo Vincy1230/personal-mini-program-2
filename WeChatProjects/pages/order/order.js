@@ -64,14 +64,18 @@ var pageObject = {
                     });
                 }
                 return that.setData({
-                    category: category,
+                    // 为快速渲染，category 临时指向 categoryData
+                    // 此时 category 和 categoryData 并非拷贝关系，二者引用同一对象
+                    // 当 searchInput 首次调用时二者恢复浅拷贝关系
+                    // 而其中的 dishes 作为二级对象，始终保持共同引用关系，内部数据得以共享
                     categoryData: category,
+                    category: category,
                 });
             })
             .then(() => {
-                for (let i in that.data.category) {
-                    for (let j in that.data.category[i].dishes) {
-                        let dish = that.data.category[i].dishes[j];
+                for (let i in that.data.categoryData) {
+                    for (let j in that.data.categoryData[i].dishes) {
+                        let dish = that.data.categoryData[i].dishes[j];
                         dish.audioContext.src = dish.sound;
                     }
                 }
