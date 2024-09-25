@@ -7,6 +7,7 @@ const $ = db.command.aggregate;
 var pageObject = {
     data: {
         category: [],
+        categoryData: [],
     },
 
     onLoad(query) {
@@ -64,6 +65,7 @@ var pageObject = {
                 }
                 return that.setData({
                     category: category,
+                    categoryData: category,
                 });
             })
             .then(() => {
@@ -88,6 +90,31 @@ var pageObject = {
         let index = event.currentTarget.dataset.index;
         let dish = category[index[0]].dishes[index[1]];
         dish.audioContext.play();
+    },
+
+    searchInput(event) {
+        let that = this;
+        let keyword = event.detail.value.replace(/\s+/g, '');
+        let category = [];
+        for (let i in that.data.categoryData) {
+            let dishes = [];
+            for (let j in that.data.categoryData[i].dishes) {
+                let dish = that.data.categoryData[i].dishes[j];
+                if (dish.name.indexOf(keyword) !== -1) {
+                    dishes.push(dish);
+                }
+            }
+            if (dishes.length > 0) {
+                category.push({
+                    name: that.data.categoryData[i].name,
+                    dishes: dishes,
+                });
+            }
+        }
+        that.setData({
+            category: category,
+        });
+        return keyword;
     },
 
     onReduceTap(event) {
