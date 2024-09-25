@@ -1,9 +1,8 @@
 <!--pages/order/order.wxml-->
 <import src="/template/category/category.wxml" />
-<view class="search">
-  <input class="input" placeholder="搜索单品" bindinput="searchInput" />
-</view>
-<view class="submit" bindtap="submitTap">下单</view>
-<view class="header"></view>
+<view class="search-container">
+  <input class="search" placeholder="搜索单品" bindinput="searchInput" />
+</view><view class="order-container">
 <template is="category" wx:for="{{category}}" data="{{...item, categoryIindex: index}}" wx:key="name"></template>
-<view class="footer">底线, 出现了</view>
+<view class="footer">底线, 出现了</view></view>
+<view class="submit" bindtap="submitTap">下单</view>

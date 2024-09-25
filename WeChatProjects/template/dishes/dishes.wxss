@@ -1,5 +1,5 @@
 .dishes {
-    /* 左右两边一个一边靠边分布 */
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     padding: 20rpx;
