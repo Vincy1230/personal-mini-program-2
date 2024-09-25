@@ -3,6 +3,6 @@
 <template name="category">
 <view class="category">
     <view class="category-title">{{name}}</view>
-    <template is="dishes" wx:for="{{dishes}}" data="{{...item, categoryIindex: categoryIindex, dishesIindex: index}}" wx:key="*this"></template>
+    <template is="dishes" wx:for="{{dishes}}" data="{{...item, categoryIindex: categoryIindex, dishesIindex: index}}" wx:key="name"></template>
 </view>
 </template>
