@@ -10,6 +10,11 @@
     <text class="h2">作者信息</text>
     <text>Vincy SHI (史云昔)</text>
     <text>北京工商大学 计智学院 学生</text>
-    <text class="h2"></text>
-    <text>BGM：「岛 市 老 八 RAP」</text>
+    <text class="h2">资源出处</text>
+    <text>图片来自互联网搜索</text>
+    <text>图标素材来自 iconfont</text>
+    <text>BGM: 岛 市 老 八 RAP</text>
+    <text class="h2">源码地址</text>
+    <text>github@Vincy1230/personal-mini-program-2</text>
+    <text>gitee@Vincy1230/personal-mini-program-2</text>
 </view>

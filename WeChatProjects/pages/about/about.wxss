@@ -22,6 +22,10 @@
     overflow-y: auto;
 }
 
+.container::-webkit-scrollbar {
+    display: none;
+}
+
 .container > text {
     display: block;
     text-align: center;

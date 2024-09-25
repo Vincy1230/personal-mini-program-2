@@ -4,5 +4,6 @@ page {
     padding: 0;
     --maincolor: #6f4017;
     --subcolor: #888888;
-    background: #fbfbfb;
+    --bgcolor: #fbfbfb;
+    background: var(--bgcolor);
 }
