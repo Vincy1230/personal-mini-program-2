@@ -1,0 +1,19 @@
+<!--template/dishes/dishes.wxml-->
+<template name="dishes">
+    <view class="dishes" >
+        <view class="dishes-part">
+            <image class="dishes-pic" src="{{pic}}" bindtap="onPicTap" data-index="{{[categoryIindex, dishesIindex]}}"></image>
+            <view class="dishes-info">
+                <view class="dishes-name">{{name}}</view>
+                <view class="dishes-price">{{price}} 元 / {{unit}}</view>
+            </view>
+        </view>
+        <view class="dishes-part">
+            <view class="dishes-count">
+                <view class="count-btn" bindtap="onReduceTap" data-index="{{[categoryIindex, dishesIindex]}}">-</view>
+                <text class="count-number">{{count}}</text>
+                <view class="count-btn" bindtap="onAddTap" data-index="{{[categoryIindex, dishesIindex]}}">+</view>
+            </view>
+        </view>
+    </view>
+</template>

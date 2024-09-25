@@ -1,22 +1,8 @@
 <!--template/category/category.wxml-->
+<import src="/template/dishes/dishes.wxml" />
 <template name="category">
 <view class="category">
     <view class="category-title">{{name}}</view>
-    <view class="dishes" wx:for="{{dishes}}" wx:for-item="dishesItem" wx:for-index="dishesIindex" wx:key="*this">
-        <view class="dishes-part">
-            <image class="dishes-pic" src="{{dishesItem.pic}}" bindtap="onPicTap" data-index="{{[categoryIindex, dishesIindex]}}"></image>
-            <view class="dishes-info">
-                <view class="dishes-name">{{dishesItem.name}}</view>
-                <view class="dishes-price">{{dishesItem.price}} 元 / {{dishesItem.unit}}</view>
-            </view>
-        </view>
-        <view class="dishes-part">
-            <view class="dishes-count">
-                <view class="count-btn" bindtap="onReduceTap" data-index="{{[categoryIindex, dishesIindex]}}">-</view>
-                <text class="count-number">{{dishesItem.count}}</text>
-                <view class="count-btn" bindtap="onAddTap" data-index="{{[categoryIindex, dishesIindex]}}">+</view>
-            </view>
-        </view>
-    </view>
+    <template is="dishes" wx:for="{{dishes}}" data="{{...item, categoryIindex: categoryIindex, dishesIindex: index}}" wx:key="*this"></template>
 </view>
 </template>
